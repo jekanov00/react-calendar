@@ -1,0 +1,99 @@
+.calendar {
+    border: 20px solid #009991;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    letter-spacing: -0.1em;
+    max-width: 70%;
+    min-width: 400px;
+    flex:1;
+  }
+  
+  .currentDate {
+    background-color: #38cec4;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    flex-basis: 500px;
+    min-width: 400px;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .currentWeekDay {
+    text-transform: uppercase;
+    font-size: 35px;
+    padding: 100px 0 50px;
+  }
+  
+  .currentDay {
+    font-size: 300px;
+    padding-bottom: 100px;
+  }
+  
+  .calendarRight {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    flex-basis: 500px;
+    min-width: 400px;
+    font-weight: bold;
+  }
+  
+  .currentMonth {
+    margin: 100px 0 50px;
+    text-transform: uppercase;
+    color: #009991;
+    font-size: 35px;
+  }
+  
+  .calendarMain {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  .calendarMain p {
+    width: 3rem;
+  }
+  
+  .week {
+    display: flex;
+    justify-content: space-between;
+    color: #eb1b57;
+    font-size: 30px;
+  }
+  
+  .days {
+    color: #B7B7B7;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  
+  .daysContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+  
+  .currentDayCalendar {
+    position: relative;
+    color: #eb1b57;
+  }
+  
+  .currentDayCalendar::before {
+  position: absolute;
+  left: -15%;
+  top: -0.8em;
+  content: '';
+  border: 7px solid #eb1b57;
+  border-radius: 100%;
+  width: 2em;
+  height: 2em;
+  }
